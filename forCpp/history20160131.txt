@@ -1,0 +1,450 @@
+    4  more person00
+    5  sed -i 's/2012-01-23 11:05:20/2012-01-23 $(expr $RANDOM % 11):`expr $RANDOM % 60`:`expr $RANDOM % 60`/' person00
+    6  more person00
+    7  sed -i 's/2012-01-23 11:05:20/2012-01-23 $(expr $RANDOM % 11):$(expr $RANDOM % 60):$(expr $RANDOM % 60)/' person00
+    8  more person00
+    9  vim personN3
+   10  wc -l personN3
+   11  rm person0* -rf
+   12  rm person1* -rf
+   13  rm person2* -rf
+   14  rm person3* -rf
+   15  rm person4* -rf
+   16  rm person5* -rf
+   17  ll
+   18  split -l 1 personN3 -d person
+   19  ll
+   20  sed -i 's/2012-01-23 11:05:20/2012-01-23 11:05:'$RANDOM'%60/' person00
+   21  more person00
+   22  sed -i 's/2012-01-23 11:05:20/2012-01-23 11:05:'expr $RANDOM % 60'/' person00
+   23  sed -i 's/2012-01-23 11:05:20/2012-01-23 11:05:`expr $RANDOM % 60`/' person00
+   24  more person00
+   25  sed -i 's/2012-01-23 11:05:20/2012-01-23 11:05:`expr $RANDOM % 60`/' person01
+   26  more person01
+   27  sed -i 's/2012-01-23 11:05:20/2012-01-23 11:05:'$(expr $RANDOM % 60)'/' person02
+   28  more person02
+   29  sed -i 's/2012-01-23 11:05:20/2012-01-23 11:05:'$(expr $RANDOM % 60)'/' person03
+   30  more person03
+   31  sed -i 's/2012-01-23 11:05:20/2012-01-23 11:05:'$(expr $RANDOM % 60)'/' person03
+   32  more person03
+   33  sed -i 's/2012-01-23 11:05:20/2012-01-23 11:05:'$(expr $RANDOM % 60)'/' person03
+   34  sed -i 's/2012-01-23 11:05:20/2012-01-23 11:05:'0$(expr $RANDOM % 60)'/' person04
+   35  more person04
+   36  sed -i 's/2012-01-23 11:05:20/2012-01-23 11:05:'0$(expr $RANDOM % 50 + 10)'/' person04
+   37  sed -i 's/2012-01-23 11:05:20/2012-01-23 11:05:'0$(expr $RANDOM % 50 + 10)'/' person05
+   38  more person05
+   39  sed -i 's/2012-01-23 11:05:20/2012-01-23 11:05:'$(expr $RANDOM % 50 + 10)'/' person06
+   40  more person06
+   41  sed -i 's/2012-01-23 11:05:20/2012-01-23 11:05:'$(expr $RANDOM % 50 + 10)'/' person07
+   42  more person07
+   43  rm person0*
+   44  rm person0* -rf
+   45  rm person1* -rf
+   46  rm person2* -rf
+   47  rm person3* -rf
+   48  rm person4* -rf
+   49  rm person5* -rf
+   50  ll
+   51  split -l 1 personN3 -d person
+   52  diff personN3
+   53  diff personN3 personN3_bak 
+   54  vim changeRandom
+   55  mv changeRandom changeRandom.sh
+   56  sh changeRandom.sh personN3
+   57  vim personN3
+   58  vim changeRandom.sh 
+   59  rm person0* -rf
+   60  rm person1* -rf
+   61  rm person2* -rf
+   62  rm person3* -rf
+   63  rm person4* -rf
+   64  ll
+   65  diff personN3 personN3_bak 
+   66  vim personN3
+   67  vim personNN
+   68  vim changeRandom.sh 
+   69  sh changeRandom.sh personNN
+   70  vim changeRandom.sh 
+   71  sh changeRandom.sh personNN
+   72  rm personNN
+   73  vim personN3
+   74  ll
+   75  split -l 1 personN3 -d person
+   76  ll
+   77  sed -i 's/2012-01-23 11:05:20/2012-01-23 11:'0$(expr $RANDOM % 50 + 10)':'0$(expr $RANDOM % 50 + 10)'/' person00
+   78  more person00
+   79  sed -i 's/2012-01-23 11:05:20/2012-01-23 11:'0$(expr $RANDOM % 50 + 10)':'$(expr $RANDOM % 50 + 10)'/' person00
+   80  vim person00
+   81  sed -i 's/2012-01-23 11:05:20/2012-01-23 11:'0$(expr $RANDOM % 50 + 10)':'$(expr $RANDOM % 50 + 10)'/' person01
+   82  more person01
+   83  vim person01
+   84  sed -i 's/2012-01-23 11:05:20/2012-01-23 '$(expr $RANDOM % 5 + 8)':'$(expr $RANDOM % 50 + 10)':'$(expr $RANDOM % 50 + 10)'/' person02
+   85  more person0
+   86  more person02
+   87  sed -i 's/2012-01-23 11:05:20/2012-01-23 '$(expr $RANDOM % 5 + 8)':'$(expr $RANDOM % 50 + 10)':'$(expr $RANDOM % 50 + 10)'/' person03
+   88  more person03
+   89  sed -i 's/2012-01-23 11:05:20/2012-01-23 '$(expr $RANDOM % 5 + 8)':'$(expr $RANDOM % 50 + 10)':'$(expr $RANDOM % 50 + 10)'/' person04
+   90  more person04
+   91  sed -i 's/2012-01-23 11:05:20/2012-01-23 '$(expr $RANDOM % 5 + 8)':'$(expr $RANDOM % 50 + 10)':'$(expr $RANDOM % 50 + 10)'/' person05
+   92  sed -i 's/2012-01-23 11:05:20/2012-01-23 '$(expr $RANDOM % 5 + 8)':'$(expr $RANDOM % 50 + 10)':'$(expr $RANDOM % 50 + 10)'/' person06
+   93  sed -i 's/2012-01-23 11:05:20/2012-01-23 '$(expr $RANDOM % 5 + 8)':'$(expr $RANDOM % 50 + 10)':'$(expr $RANDOM % 50 + 10)'/' person07
+   94  sed -i 's/2012-01-23 11:05:20/2012-01-23 '$(expr $RANDOM % 5 + 8)':'$(expr $RANDOM % 50 + 10)':'$(expr $RANDOM % 50 + 10)'/' person08
+   95  sed -i 's/2012-01-23 11:05:20/2012-01-23 '$(expr $RANDOM % 5 + 8)':'$(expr $RANDOM % 50 + 10)':'$(expr $RANDOM % 50 + 10)'/' person09
+   96  for i in `seq 0 9`; do sed -i 's/2012-01-23 11:05:20/2012-01-23 '$(expr $RANDOM % 5 + 8)':'$(expr $RANDOM % 50 + 10)':'$(expr $RANDOM % 50 + 10)'/' person1$i; done
+   97  for i in `seq 0 9`; do sed -i 's/2012-01-23 11:05:20/2012-01-23 '$(expr $RANDOM % 5 + 8)':'$(expr $RANDOM % 50 + 10)':'$(expr $RANDOM % 50 + 10)'/' person2$i; done
+   98  for i in `seq 0 9`; do sed -i 's/2012-01-23 11:05:20/2012-01-23 '$(expr $RANDOM % 5 + 8)':'$(expr $RANDOM % 50 + 10)':'$(expr $RANDOM % 50 + 10)'/' person3$i; done
+   99  for i in `seq 0 9`; do sed -i 's/2012-01-23 11:05:20/2012-01-23 '$(expr $RANDOM % 5 + 8)':'$(expr $RANDOM % 50 + 10)':'$(expr $RANDOM % 50 + 10)'/' person4$i; done
+  100  ll | grep -E person[0-9]{2} | xargs cat > person_large
+  101  mkdir 11
+  102  mv -E person[0-9]{2} 11
+  103  mv person0* 11
+  104  mv person1* 11
+  105  mv person2* 11
+  106  mv person3* 11
+  107  mv person4* 11
+  108  ll
+  109  rm person_large 
+  110  cd ll
+  111  ll
+  112  cd 11
+  113  ll
+  114  cat person* > personN4
+  115  vim personN4
+  116  mv * ..
+  117  ll
+  118  cd ..
+  119  rm 11
+  120  rm 11 -r
+  121  ll
+  122  ll | grep person[0-9]{2} | xarge rm 
+  123  ll | grep person[0-9]{2} | xargs rm 
+  124  ll | grep person[0-9]{2} -exec rm \ {}
+  125  ll | grep person[0-9]{2} -exec rm {} ;
+  126  ll | grep -E person[0-9]{2} | xargs rm 
+  127  ll | grep -E person[0-9]{2} | xargs rm
+  128  ll | grep -E person[0-9]{2} -exec rm \ {};
+  129  ll
+  130  rm -rf person0*
+  131  rm -rf person1*
+  132  rm -rf person2*
+  133  rm -rf person3*
+  134  rm -rf person4*
+  135  ll
+  136  rm changeRandom.sh 
+  137  cp personN4 personN4_bak
+  138  vim personN4
+  139  split -l 1 personN4 -d person
+  140  ll
+  141  more person00
+  142  sed 's/2012-01-23/2012-'$RANDOM % 2 + 10'-'$RANDOM % 10 + 10'' person00
+  143  sed 's/2012-01-23/2012-'$RANDOM % 2 + 10'-'$RANDOM % 10 + 10'/' person00
+  144  sed 's/2012-01-23/2012-'$(expr RANDOM % 2 + 10)'-'$(expr RANDOM % 10 + 10)'/' person00
+  145  sed 's/2012-01-23/2012-'$(RANDOM % 2 + 10)'-'$(expr RANDOM % 10 + 10)'/' person00
+  146  sed 's/2012-01-23/2012-'$(expr $RANDOM % 2 + 10)'-'$(expr RANDOM % 10 + 10)'/' person00
+  147  sed 's/2012-01-23/2012-'$(expr $RANDOM % 2 + 10)'-'$(expr $RANDOM % 10 + 10)'/' person00
+  148  sed 's/2012-01-23/2012-'$(expr $RANDOM % 2 + 10)'-'$(expr $RANDOM % 10 + 10)'/' person01
+  149  sed 's/2012-01-23/2012-'$(expr $RANDOM % 2 + 10)'-'$(expr $RANDOM % 10 + 10)'/' person02
+  150  for i in $(seq 0 9); do echo $i; done
+  151  for i in $(seq 0 9); do sed 's/2012-01-23/2012-'$(expr $RANDOM % 2 + 10)'-'$(expr $RANDOM % 10 + 10)'/' person0$i; done
+  152  for i in $(seq 0 9); do sed -i 's/2012-01-23/2012-'$(expr $RANDOM % 2 + 10)'-'$(expr $RANDOM % 10 + 10)'/' person0$i; done
+  153  for i in $(seq 0 9); do sed -i 's/2012-01-23/2012-'$(expr $RANDOM % 2 + 10)'-'$(expr $RANDOM % 10 + 10)'/' person1$i; done
+  154  for i in $(seq 0 9); do sed -i 's/2012-01-23/2012-'$(expr $RANDOM % 2 + 10)'-'$(expr $RANDOM % 10 + 10)'/' person2$i; done
+  155  for i in $(seq 0 9); do sed -i 's/2012-01-23/2012-'$(expr $RANDOM % 2 + 10)'-'$(expr $RANDOM % 10 + 10)'/' person3$i; done
+  156  for i in $(seq 0 9); do sed -i 's/2012-01-23/2012-'$(expr $RANDOM % 2 + 10)'-'$(expr $RANDOM % 10 + 10)'/' person4$i; done
+  157  for i in $(seq 0 9); do sed -i 's/2012-01-23/2012-'$(expr $RANDOM % 2 + 10)'-'$(expr $RANDOM % 10 + 10)'/' person5$i; done
+  158  mkdir 11
+  159  mv person0* 11
+  160  mv person1* 11
+  161  mv person2* 11
+  162  mv person3* 11
+  163  mv person4* 11
+  164  ll
+  165  cd ll
+  166  cd 11
+  167  ll
+  168  cat person* > personN5
+  169  vim personN5
+  170  mv personN5 ..
+  171  cd ..
+  172  vim personN5
+  173  wc -l personN5
+  174  rm 11 -rf
+  175  vim personN5
+  176  cp personN5 personND
+  177  cat personN5 personND >  personN6
+  178  vim personN6
+  179  wc -l personN6
+  180  vim personN6
+  181  rm personND
+  182  vim personN6
+  183  more personN6
+  184  vim personN6
+  185  ll
+  186  cp personN5 personN5_bak
+  187  ll
+  188  mv personN5_bak personN5_BAK
+  189  vim personN6
+  190  for i in $(seq 50 99); do sed 's/VALUES([0-9]\{2\}/$i/' personN6; ;done
+  191  for i in $(seq 50 99); do sed 's/VALUES([0-9]\{2\}/$i/' personN6; done
+  192  for i in $(seq 50 99); do sed 's/VALUES([0-9]\{2\}/'$i'/' personN6; done
+  193  for i in $(seq 50 99); do sed 's/VALUES([0-9]\{2\}/VALUES($i/' personN6; done
+  194  for i in $(seq 50 99); do sed 's/VALUES([0-9]\{2\}/VALUES('$i'/' personN6; done
+  195  for ( i=50; i<=99; i++ ); do sed 's/VALUES([0-9]\{2\}/VALUES('$i'/' personN6; done
+  196  for ( i=50; i<=99; i++ ) ; do sed 's/VALUES([0-9]\{2\}/VALUES('$i'/' personN6; done
+  197  for( i=50; i<=99; i++ ) ; do sed 's/VALUES([0-9]\{2\}/VALUES('$i'/' personN6; done
+  198  for ((i=50; i<=99; i++)) ; do sed 's/VALUES([0-9]\{2\}/VALUES('$i'/' personN6; done
+  199  for i in $(seq 50 99); do sed 's/VALUES([0-9]\{2\}/VALUES('$i'/' personN6; done
+  200  for i in $(seq 50 99); do sed 's/VALUES([0-9]\{2\}/VALUES('$i'/' personN6; done
+  201  cd person
+  202  cd Person/
+  203  for i in $(seq 50 99); do sed 's/VALUES([0-9]\{2\}/VALUES('$i'/' personN6; done
+  204  for i in $(seq 50 99); do sed '$is/VALUES([0-9]\{2\}/VALUES('$i'/' personN6; done
+  205  vim personN6
+  206  for i in $(seq 0 49); do sed '$is/VALUES([0-9]\{2\}/VALUES('$i'/' personN6; done
+  207  for i in $(seq 0 49); do sed '$is/VALUES([0-9]\{2\}/VALUES(00/' personN6; done
+  208  for i in $(seq 0 49); do sed '$i s/VALUES([0-9]\{2\}/VALUES(00/' personN6; done
+  209  for i in $(seq 0 49); do sed -i '$i s/VALUES([0-9]\{2\}/VALUES(00/' personN6; done
+  210  vim personN6
+  211  for i in $(seq 0 49); do sed -i '$is/VALUES([0-9]\{2\}/VALUES(00/' personN6; done
+  212  vim personN6
+  213  rm personN6
+  214  cp personN5 personN6
+  215  vim personN6
+  216  split -l 1 personN6 -d person
+  217  ll
+  218  more person01
+  219  more person00
+  220  for i in $(seq 0 9); do sed 's/VALUES(0/VALUES($i/' person0$i; done
+  221  vim personN5
+  222  for i in $(seq 0 9); do sed 's/VALUES(0/VALUES('$(expr $i + 50)'/' person0$i; done
+  223  vim personN6
+  224  for i in `seq 0 9`; do sed "s/VALUES(0/VALUES(5$i/" person1$i; done;
+  225  for i in `seq 0 9`; do sed "s/VALUES(1$i/VALUES(5$i/" person1$i; done;
+  226  for i in `seq 0 9`; do sed "s/VALUES(2$i/VALUES(6$i/" person2$i; done;
+  227  for i in `seq 0 9`; do sed -i "s/VALUES(0$i/VALUES(0$i/" person1$i; done;
+  228  for i in `seq 0 9`; do sed -i "s/VALUES(2$i/VALUES(6$i/" person2$i; done;
+  229  for i in `seq 0 9`; do sed -i "s/VALUES(3$i/VALUES(7$i/" person3$i; done;
+  230  for i in `seq 0 9`; do sed -i "s/VALUES(4$i/VALUES(8$i/" person4$i; done;
+  231  for i in `seq 0 9`; do sed -i "s/VALUES($i/VALUES(9$i/" person2$i; done;
+  232  rm person0* -rf
+  233  rm person2* -rf
+  234  rm person1* -rf
+  235  rm person3* -rf
+  236  rm person4* -rf
+  237  ll person
+  238  ll person*
+  239  split -l 1 personN6 -d person
+  240  for i in `seq 0 9`; do sed -i "s/VALUES($i/VALUES(5$i/" person2$i; done;
+  241  rm person0* -rf
+  242  rm person2* -rf
+  243  rm person1* -rf
+  244  rm person3* -rf
+  245  rm personr* -rf
+  246  rm person4* -rf
+  247  ll
+  248  split -l 1 personN6 -d person
+  249  for i in `seq 0 9`; do sed -i "s/VALUES($i/VALUES(5$i/" person0$i; done;
+  250  for i in `seq 0 9`; do sed -i "s/VALUES(1$i/VALUES(6$i/" person1$i; done;
+  251  for i in `seq 0 9`; do sed -i "s/VALUES(2$i/VALUES(7$i/" person2$i; done;
+  252  for i in `seq 0 9`; do sed -i "s/VALUES(3$i/VALUES(8$i/" person3$i; done;
+  253  for i in `seq 0 9`; do sed -i "s/VALUES(4$i/VALUES(9$i/" person4$i; done;
+  254  mkdir 11
+  255  mv person0* 11
+  256  mv person1* 11
+  257  mv person2* 11
+  258  mv person3* 11
+  259  mv person4* 11
+  260  ll
+  261  cd 11
+  262  ll
+  263  more person*
+  264  for i in `seq 0 9`; do sed "s/44088119801001000$i/44088119801001005$i/" person0$i; done;
+  265  for i in `seq 0 9`; do sed -i "s/44088119801001000$i/44088119801001005$i/" person0$i; done;
+  266  for i in `seq 0 9`; do sed -i "s/44088119801001001$i/44088119801001006$i/" person1$i; done;
+  267  for i in `seq 0 9`; do sed -i "s/44088119801001002$i/44088119801001007$i/" person2$i; done;
+  268  for i in `seq 0 9`; do sed -i "s/44088119801001003$i/44088119801001008$i/" person3$i; done;
+  269  for i in `seq 0 9`; do sed -i "s/44088119801001004$i/44088119801001009$i/" person5$i; done;
+  270  more person*
+  271  cat person* > personN7
+  272  vim personN7 
+  273  vim personN7
+  274  mv personN7 ..
+  275  cd ..
+  276  cp personN7 personN7_bak
+  277  mv personN7_bak personN7_BAK
+  278  vim personN7
+  279  ssh 192.168.0.45
+  280  cd /home/zhm/bmp/
+  281  ll
+  282  mkdir ORL
+  283  ll s1
+  284  ll s2
+  285  ll s3
+  286  ls
+  287  for i in $(seq 1 9);do ;done;
+  288  cp s1/* ORL/
+  289  ls ORL/
+  290  cp s2/* ORL/
+  291  ll ORL/
+  292  for i in $(seq 1 9); do mv s2/$i.BMP s2/1$i;done;
+  293  for i in $(seq 1 9); do mv s3/$i.BMP s3/2$i;done;
+  294  for i in $(seq 1 9); do mv s4/$i.BMP s4/3$i;done;
+  295  for i in $(seq 1 9); do mv s5/$i.BMP s5/4$i;done;
+  296  for i in $(seq 1 9); do mv s6/$i.BMP s6/5$i;done;
+  297  for i in $(seq 1 9); do mv s7/$i.BMP s7/5$i;done;
+  298  for i in $(seq 1 9); do mv s8/$i.BMP s8/6$i;done;
+  299  for i in $(seq 1 9); do mv s9/$i.BMP s9/7$i;done;
+  300  for i in $(seq 1 9); do mv s10/$i.BMP s10/8$i;done;
+  301  for i in $(seq 1 9); do mv s11/$i.BMP s11/9$i;done;
+  302  for i in $(seq 1 9); do mv s12/$i.BMP s12/10$i;done;
+  303  for i in $(seq 1 9); do mv s13/$i.BMP s13/11$i;done;
+  304  for i in $(seq 1 9); do mv s14/$i.BMP s14/12$i;done;
+  305  for i in $(seq 1 9); do mv s15/$i.BMP s15/13$i;done;
+  306  for i in $(seq 1 9); do mv s16/$i.BMP s16/14$i;done;
+  307  for i in $(seq 1 9); do mv s17/$i.BMP s17/15$i;done;
+  308  for i in $(seq 1 9); do mv s18/$i.BMP s18/16$i;done;
+  309  for i in $(seq 1 9); do mv s19/$i.BMP s19/17$i;done;
+  310  for i in $(seq 1 9); do mv s20/$i.BMP s20/18$i;done;
+  311  for i in $(seq 1 9); do mv s21/$i.BMP s21/19$i;done;
+  312  for i in $(seq 1 9); do mv s22/$i.BMP s22/20$i;done;
+  313  for i in $(seq 1 9); do mv s23/$i.BMP s23/21$i;done;
+  314  for i in $(seq 1 9); do mv s24/$i.BMP s24/22$i;done;
+  315  for i in $(seq 1 9); do mv s25/$i.BMP s25/23$i;done;
+  316  for i in $(seq 1 9); do mv s26/$i.BMP s26/24$i;done;
+  317  for i in $(seq 1 9); do mv s27/$i.BMP s27/25$i;done;
+  318  for i in $(seq 1 9); do mv s28/$i.BMP s28/26$i;done;
+  319  for i in $(seq 1 9); do mv s29/$i.BMP s29/27$i;done;
+  320  for i in $(seq 1 9); do mv s30/$i.BMP s30/28$i;done;
+  321  for i in $(seq 1 9); do mv s31/$i.BMP s31/29$i;done;
+  322  for i in $(seq 1 9); do mv s32/$i.BMP s32/30$i;done;
+  323  for i in $(seq 1 9); do mv s33/$i.BMP s33/31$i;done;
+  324  for i in $(seq 1 9); do mv s34/$i.BMP s34/32$i;done;
+  325  for i in $(seq 1 9); do mv s35/$i.BMP s35/33$i;done;
+  326  for i in $(seq 1 9); do mv s36/$i.BMP s36/34$i;done;
+  327  for i in $(seq 1 9); do mv s37/$i.BMP s37/35$i;done;
+  328  for i in $(seq 1 9); do mv s38/$i.BMP s38/36$i;done;
+  329  for i in $(seq 1 9); do mv s39/$i.BMP s39/37$i;done;
+  330  for i in $(seq 1 9); do mv s40/$i.BMP s40/38$i;done;
+  331  for i in $(seq 1 9); do mv s41/$i.BMP s41/39$i;done;
+  332  ll s1
+  333  ll s2
+  334  ll s3
+  335  cd ..
+  336  rm bmp/ -rf
+  337  for i in $(seq 1 9); do mv s2/1$i.BMP s2/1$i.BMP;done;
+  338  cd /home/zhm/bmp
+  339  vim sh.sh
+  340  pwd
+  341  vim sh.sh
+  342  vim 1.sh
+  343  vim changeName.sh
+  344  cd ..
+  345  vim changeName.sh
+  346  mv changeName.sh bmp
+  347  cd bmp
+  348  cp changeName.sh ..
+  349  sh changeName.sh 
+  350  ll s2
+  351  ll s3
+  352  ll s4
+  353  tail changeName.sh 
+  354  for i in $(seq 2 40);do mv s$i/10.BMP s$i/$i0.BMP;done;
+  355  ll s4
+  356  ll s5
+  357  ll s6
+  358  vim changeName.sh 
+  359  cp changeName.sh ..
+  360  ll ..
+  361  rm bmp
+  362  cd ..
+  363  mv bmp/ bmp_bak
+  364  cd bmp
+  365  ll s3
+  366  cp ../changeName.sh .
+  367  sh changeName.sh 
+  368  for i in $(seq 1 40); do cp s$i/* ORL; done
+  369  y
+  370  cd /home/zhm/bmp
+  371  mkdir ORL
+  372  ll s5
+  373  ll s6
+  374  ll s7
+  375  vim changeName.sh 
+  376  for i in $(seq 1 9); do mv s7/$i.BMP s7/0$i.BMP;done;
+  377  ll
+  378  for i in $(seq 1 9); do mv s7/$i.BMP s7/0$i.BMP;done;
+  379  for i in $(seq 1 9); do mv s7/5$i.BMP s7/0$i.BMP;done;
+  380  mv s6/* ORL/
+  381  mv s7/* ORL/
+  382  pwd
+  383  cd ORL
+  384  ls
+  385  ll
+  386  pwd
+  387  cd /home/zhm/
+  388  ll
+  389  ll datadata/
+  390  mkdir faces
+  391  cd faces/
+  392  wget -v -c http://user18339:Mu7Fz0Vs@nigos.nist.gov:8080/colorferet/colorferet.tar
+  393  exit
+  394  cd /home/zhm/
+  395  vim 1.txt 
+  396  vim 2.t
+  397  vim 2.txt
+  398  vim .2.txt.swp 
+  399  rm .2.txt.swp
+  400  vim 2.txt
+  401  vim 1.txt 
+  402  diff 1.txt 2.txt 
+  403  cat 1.txt 2.txt > 3.txt
+  404  vim 3.txt 
+  405  ssh 192.168.0.45
+  406  exit
+  407  cd /home/zhm/
+  408  ll
+  409  mv ʵʱ????????? (4).xlsx 4.xlsx
+  410  diff 4.xlsx 5.xlsx 
+  411  diff -b 4.xlsx 5.xlsx 
+  412  vim 4.xlsx 
+  413  vim 5.xlsx 
+  414  vim 4.xlsx 
+  415  vim 5.xlsx 
+  416   ds 
+  417  vim 1.txt
+  418  vim 2.txt
+  419  ping 192.168.0.76
+  420  nmap -Sp 192.168.0.0/24
+  421  ping 192.168.0.76
+  422  vim /etc/sysconfig/network-scripts/if-eth0
+  423  vim /etc/sysconfig/network-scripts/ifcfg-eth0
+  424  nmap -sS 192.168.0.0/24
+  425  nmap -sP 192.168.0.0/24
+  426  nmap -sP 192.168.0.0/24 | grep up
+  427  ping 211.66.96.24
+  428  nmap -sP 211.66.96.0/24 | grep up
+  429  nmap -sP 211.66.96.0/24 
+  430  nmap -sP 202.116.42.126/25
+  431  nmap -sP 202.116.42.126/24
+  432  nmap -sP 202.116.42.126/25
+  433  nmap -sP 211.66.96.0/16
+  434  nmap -sP 211.66.0.0/16
+  435  nmap -sP 211.66.96.0/20
+  436  exit
+  437  ssh -f -N -R --help
+  438  ssh -f -N -R 3333:localhost:22
+  439  ssh -f -N -R 3333:localhost:22 root@192.168.0.111
+  440  ps -ef
+  441  ps -ef |　grep ssh
+  442  ps -ef | more
+  443  ssh -f -N -R 3333:localhost:22 root@192.168.0.111
+  444  exit
+  445  ps -ef | grep 3333
+  446  kill -9 3417
+  447  kill -9 3625
+  448  kill -9 3629
+  449  ps -ef | grep 3333
+  450  exit
+  451  cd /home/zhm/forCpp/
+  452  ll
+  453  history > history20160131.txt
