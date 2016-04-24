@@ -1,0 +1,32 @@
+Start execute sql statement at Sun Mar 15 18:30:49 CST 2015.
+
+
+below is output result.
++------+-------+
+| id   | val   |
++------+-------+
+|    1 | jack  |
+|    2 | robin |
+|    3 | mark  |
++------+-------+
++--------+--------+------------+
+| title  | author | date       |
++--------+--------+------------+
+| PHP    | John   | 2015-03-15 |
+| PHP1   | John1  | 2015-03-15 |
+| PHP2   | John1  | 2015-03-15 |
+| PHP3   | John1  | 2015-03-15 |
+| PHP4   | John1  | 2015-03-15 |
+| PHP5   | John1  | 2015-03-15 |
+| PHP6   | John1  | 2015-03-15 |
+| PHP7   | John1  | 2015-03-15 |
+| PHP8   | John1  | 2015-03-15 |
+| PHP5   | John1  | 2015-03-15 |
+| PHP5   | John1  | 2015-03-15 |
+| PHP1   | John1  | 2015-03-15 |
+| PHP21  | John1  | 2015-03-15 |
+| PHP12  | John1  | 2015-03-15 |
+| PHP13  | John1  | 2015-03-15 |
+| PHP143 | John1  | 2015-03-15 |
++--------+--------+------------+
+script executed successful.
