@@ -372,14 +372,15 @@ if __name__ =='__main__':
     # zhm    
     # print Transaction 
     # zhm
-    
+     
     # 频繁项集初始长度
     lenItem = 1
     # 频繁集初始化
     candidateSet = Candidate(lenItem)
     for i in range(len(Items)):
         candidateSet.addCandidate([str(i)])
-
+    
+    '''
     # 对1-频繁集计算支持度
     numOfCandidate = candidateSet.getNumOfCandidate()
     for transaction in Transaction:
@@ -489,4 +490,4 @@ if __name__ =='__main__':
 
     os.unlink("/tmp/apriori-parent")
     os.unlink("/tmp/apriori-child")
-    ''' '''
+    ''' ''' '''
