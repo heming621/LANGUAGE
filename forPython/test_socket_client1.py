@@ -1,3 +1,5 @@
+''' UDP的socket连接'''
+
 #! /usr/local/bin/python
 import socket
 
